@@ -1,0 +1,199 @@
+/* Direita.css */
+
+.Divgeral {
+  width: 350px;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  border-left: 1px solid #2f3336;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Barra de pesquisa */
+.procurar {
+  margin-bottom: 20px;
+}
+
+.procurar input {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #16181c;
+  border: none;
+  border-radius: 9999px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.procurar input::placeholder {
+  color: #888;
+}
+
+/* Container de tendências */
+.tendenciaContainer {
+  background-color: #16181c;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+/* Título das tendências */
+.tendenciaContainer h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Item de tendência */
+.tendenciaItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #2f3336;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tendenciaItem:last-child {
+  border-bottom: none;
+}
+
+.tendenciaItem:hover {
+  background-color: #1da1f210;
+}
+
+/* Informações da tendência */
+.tendenciaInfo {
+  flex: 1;
+}
+
+.tendenciaInfo h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.tendenciaInfo p {
+  font-size: 14px;
+  color: #888;
+  margin: 4px 0 0;
+}
+
+/* Número de postagens */
+.tendenciaPostagens {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Botão "Mostrar mais" */
+.mostrarMais {
+  color: #1da1f2;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.mostrarMais:hover {
+  text-decoration: underline;
+}
+
+/* Seção "Quem seguir" */
+.quemSeguirContainer {
+  background-color: #16181c;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+/* Título da seção */
+.quemSeguirContainer h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Perfil sugerido */
+.quemSeguirItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #2f3336;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quemSeguirItem:last-child {
+  border-bottom: none;
+}
+
+.quemSeguirItem:hover {
+  background-color: #1da1f210;
+}
+
+/* Avatar do usuário */
+.quemSeguirItem img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+/* Informações do usuário */
+.quemSeguirInfo {
+  flex: 1;
+}
+
+.quemSeguirInfo h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.quemSeguirInfo p {
+  font-size: 14px;
+  color: #888;
+  margin: 4px 0 0;
+}
+
+/* Botão "Seguir" */
+.quemSeguirItem button {
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quemSeguirItem button:hover {
+  background-color: #1991db;
+}
+
+/* Diretrizes no rodapé */
+.diretrizes {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888;
+  line-height: 1.5;
+}
+
+.diretrizes p {
+  margin: 0;
+}
+
+.diretrizes span {
+  display: block;
+  margin-top: 8px;
+  color: #888;
+}
+@media (max-width:800px){
+  .Divgeral{
+    display: none;
+  }
+}

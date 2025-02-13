@@ -1,0 +1,179 @@
+/* Menu.css */
+
+.Menu {
+  width: 275px;
+  height: 100vh;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #2f3336;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: width 0.3s ease; /* Adiciona transição suave */
+}
+
+/* Logo */
+.Menu .logo {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.Menu .logo svg {
+  width: 30px; /* Ajuste o tamanho do ícone do X */
+  height: 30px;
+  fill: #fff; /* Cor do ícone */
+}
+
+/* Opções do menu */
+.Menu .opcoesMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Menu .opcoesMenu ul li {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.Menu .opcoesMenu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 9999px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.Menu .opcoesMenu ul li a:hover {
+  background-color: #1da1f210; /* Fundo azul claro no hover */
+}
+
+/* Ícones das opções do menu */
+.Menu .opcoesMenu ul li svg {
+  width: 24px; /* Tamanho dos ícones */
+  height: 24px;
+  fill: #fff; /* Cor dos ícones */
+}
+
+/* Botão Publicar */
+.Menu .opcoesMenu .btnPublicar {
+  width: 90%;
+  padding: 15px;
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s;
+}
+
+.Menu .opcoesMenu .btnPublicar:hover {
+  background-color: #1991db; /* Azul mais escuro no hover */
+}
+
+/* Informações do usuário */
+.Menu .inforLogin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 9999px;
+  transition: background-color 0.2s;
+}
+
+.Menu .inforLogin:hover {
+  background-color: #2f3336; /* Fundo escuro no hover */
+}
+
+.Menu .inforLogin .avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.Menu .inforLogin .usuario h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.Menu .inforLogin .usuario p {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+.Menu .inforLogin .opçoes {
+  margin-left: auto;
+  cursor: pointer;
+  color: #fff;
+}
+
+.Menu .inforLogin .opçoes:hover {
+  color: #1da1f2; /* Azul no hover */
+}
+.Menu .opcoesMenu button i {
+  display: none; /* Oculta o texto */
+}
+@media (max-width: 1024px) {
+  .Menu {
+    width: 80px; /* Largura reduzida */
+    padding: 10px;
+  }
+  .Menu .logo svg {
+    
+    width: 24px; /* Reduz o tamanho do ícone do X */
+    height: 24px;
+  }
+
+  .Menu .opcoesMenu ul li a {
+    justify-content: center; /* Centraliza os ícones */
+    padding: 12px; /* Ajusta o padding */
+    margin: 10px 0;
+  }
+  .Menu .opcoesMenu ul li{
+    justify-content: center;
+  }
+
+  .Menu .opcoesMenu button span {
+    display: none; /* Oculta o texto */
+
+  }
+  .Menu .opcoesMenu button i {
+    display: block; 
+  }
+
+  .Menu .opcoesMenu ul li a span {
+    display: none; /* Oculta o texto */
+  }
+
+  .Menu .opcoesMenu .btnPublicar {
+    width: 100%; /* Botão ocupa toda a largura */
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .Menu .inforLogin {
+    justify-content: center; /* Centraliza o avatar */
+  }
+
+  .Menu .inforLogin .usuario {
+    display: none; /* Oculta o nome e nome de usuário */
+  }
+
+  .Menu .inforLogin .opçoes {
+    display: none; /* Oculta as opções */
+  }
+}

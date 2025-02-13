@@ -1,0 +1,158 @@
+/* Feed.css */
+
+.feedGeral {
+  flex: 1;
+  margin-left: 275px; /* Compensar a largura do menu */
+  margin-right: 350px; /* Compensar a largura da seção direita */
+  width: 100%;
+  overflow: hidden;
+}
+/* Feed.css */
+
+/* Conteúdo da publicação */
+.feedPublicacao h4 {
+  font-size: 16px;
+  color: #fff;
+  margin: 10px 0;
+  word-wrap: break-word; /* Quebra palavras longas */
+  overflow-wrap: break-word; /* Quebra palavras longas */
+  white-space: normal; /* Permite que o texto quebre em várias linhas */
+}
+
+/* Menu fixo do feed (Para você / Seguindo) */
+.menuFixo {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #2f3336;
+  padding: 10px 0;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+/*  z-index: 10;*/
+  
+}
+
+.menuFixo h1 {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 9999px;
+  transition: background-color 0.2s;
+}
+
+.menuFixo h1:hover {
+  background-color: #2f3336; /* Fundo escuro no hover */
+}
+
+/* Área de publicação */
+.publicar {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #2f3336;
+}
+
+.publicarAvatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.publicarComentario {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.publicarComentario input {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  outline: none;
+}
+
+.publicarBt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.publicarIcones {
+  display: flex;
+  gap: 10px;
+}
+
+.publicarIcones button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1da1f2;
+  padding: 8px;
+  border-radius: 9999px;
+  transition: background-color 0.2s;
+}
+
+.publicarIcones button:hover {
+  background-color: #1da1f210; /* Fundo azul claro no hover */
+}
+
+.publicarBtPostar button {
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.publicarBtPostar button:hover {
+  background-color: #1991db; /* Azul mais escuro no hover */
+}
+
+@media (max-width: 800px){
+  .feedGeral {
+    margin-left: 80px;
+     width: calc(100% - 80px); /* Ajusta a largura do feed */
+    margin-right: 0px;
+  
+  }
+
+}
+@media (max-width: 600px) {
+  .feedGeral {
+    padding-left: 80px;
+    margin-left: 0px; /* Menu oculto ou recolhido */
+  }
+
+  .publicar {
+    padding: 10px; /* Reduz o padding */
+  }
+
+  .publicarAvatar img {
+    width: 40px; /* Reduz o tamanho do avatar */
+    height: 40px;
+  }
+
+  .publicarComentario input {
+    font-size: 16px; /* Reduz o tamanho da fonte */
+  }
+
+  .publicarBtPostar button {
+    padding: 8px 16px; /* Reduz o tamanho do botão */
+    font-size: 14px;
+  }
+  .publicarIcones i {
+    display: none;
+}
+  .publicarIcones {
+    gap: 0px;
+  }
+
+}
